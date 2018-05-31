@@ -1,0 +1,106 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">My Glam</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#services">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">OUR SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">OFFER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#team">MY ACCOUNT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">PAMPER YOU SELF PRETTY</div>
+            <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">I RESERVE</a>
+        </div>
+    </div>
+</header>
+<a class="navbar-brand js-scroll-trigger" href="#page-top">Explore our services</a>
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+
+
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div *ngIf="data" class="carousel-item active" style="background-image: url('http://35.202.98.70/myglam_web_app/web/uploads/images/categories/5aeaeacb275b8f24e114b072/5aeaeacb275b8f24e114b072.png')">
+                <div class="carousel-caption .d-block">
+                    <h3>{{ data[0].label }}</h3>
+                    <p>{{data[0].description}}</p>
+                </div>
+            </div>
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div *ngIf="data" class="carousel-item " style="background-image: url('http://35.202.98.70/myglam_web_app/web/uploads/images/categories/5aeaecbb275b8f24e114b073/5aeaecbb275b8f24e114b073.png')">
+                <div class="carousel-caption .d-block">
+                    <h3>{{ data[1].label }}</h3>
+                    <p>{{data[1].description}}</p>
+                </div>
+            </div>
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div *ngIf="data" class="carousel-item " style="background-image: url('http://35.202.98.70/myglam_web_app/web/uploads/images/categories/5aeaf255275b8f168c192a75/5aeaf255275b8f168c192a75.png')">
+                <div class="carousel-caption .d-block">
+                    <h3>{{ data[2].label }}</h3>
+                    <p>{{data[2].description}}</p>
+                </div>
+            </div>
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div *ngIf="data" class="carousel-item " style="background-image: url('http://35.202.98.70/myglam_web_app/web/uploads/images/categories/5aeaf2cd275b8f329a1316e2/5aeaf2cd275b8f329a1316e2.png')">
+                <div class="carousel-caption .d-block">
+                    <h3>{{ data[3].label }}</h3>
+                    <p>{{data[3].description}}</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+
+<!-- Page Content -->
+<section class="py-5">
+    <div class="container">
+        <h1></h1>
+        <p>
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+    </div>
+    <!-- /.container -->
+</footer>
